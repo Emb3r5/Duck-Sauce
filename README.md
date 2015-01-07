@@ -19,4 +19,3 @@ This script will need the following modifications to work:
 The script works by collecting the malware samples into a "done" directory, and then hashing them for comparison of a 
 running list of known hashes.  The first time running this script will load all malware samples, while subsequent runs 
 will create a zip of files not included in the last run.  
-
