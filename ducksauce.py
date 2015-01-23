@@ -34,7 +34,9 @@ def check_hashstring(thehashstring):
 	else :
 		return False
 
-#Get Files from all 3 sensors and put them into a ./data folder
+#Get Files from sensor and put them into a ./data folder
+#Note this section can be copied and used for as many sensors as you have
+#Be sure to change the IP address and password to appropriate values
 child = pexpect.spawn('scp -r admin@127.0.0.1:/data/malware/done/ .', timeout=500)
 child.expect (['assword:', pexpect.EOF])
 child.sendline ("SecretPassword")
